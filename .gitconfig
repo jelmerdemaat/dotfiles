@@ -4,7 +4,14 @@
 	name = Jelmer de Maat
 	email = jelmer@netvlies.nl
 [alias]
+	aa = !git add -A . && git status
 	st = status
+	go = checkout
+	cm = commit
+	ls = ls-files
 	unstage = reset HEAD --
-	aa = add -A
-
+	aliases = !git config -l | grep alias | cut -c 7-
+[push]
+	default = matching
+[mergetool]
+	keepBackup = false
