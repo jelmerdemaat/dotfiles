@@ -1,0 +1,10 @@
+[help]
+	autocorrect = 1
+[user]
+	name = Jelmer de Maat
+	email = jelmer@netvlies.nl
+[alias]
+	st = status
+	unstage = reset HEAD --
+	aa = add -A
+
