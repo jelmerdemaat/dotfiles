@@ -85,7 +85,16 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
 alias g="git"
+alias mkdir="mkdir -pv" # Always use parent folders & verbose
+alias rm="rm -I -v"
 
+# Taken from https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 alias config='/usr/bin/git --git-dir=/Users/jelmaa/.jelmer/ --work-tree=/Users/jelmaa/'
 
-
+# Taken from https://github.com/mathiasbynens/dotfiles/
+# Easier navigation: .., ..., ...., ....., and ~
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~"
